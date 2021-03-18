@@ -18,32 +18,36 @@
     </header>
     <div class="container-fluid main-display">
         <div class="row">
-            <div class="col-3 m-1 search-area">
+            <div class="col-3 search-area">
                 <h3>Search by City:</h3>
-                <div class="input-group mb-3">
-                    <form id="searchForm">
-                        <input type="text" class="form-control" placeholder="enter city here..." aria-describedby="button-addon2">
+                <form id="searchForm">
+                    <div class="input-group mb-3">
+                        <input type="text" name="city" class="form-control" placeholder="enter city here..." aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>                               
+                            <button class="btn btn-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>                               
                         </div>
-                    </form>
-                </div>
-                <div id="searchHistory">
-
-                </div>
+                    </div>
+                </form>
+                <div id="searchHistory"></div>
             </div>
-            <div id="searchDisplayEl" class="col-9"></div>
-                <div id="todayWeather"></div>
-                <div id="fiveDayForecast"></div>
+            <div id="searchDisplayEl" class="col-9">
+                <div id="currentWeather"></div>
+                <div id="fiveDayForecast" class="row"></div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
 
-
-
+<!-- 
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="input city here.." aria-label="input city here.." aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i>
+    </button>
+  </div> -->
 
 
