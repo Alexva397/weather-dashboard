@@ -1,6 +1,50 @@
-.main-display {
+body, html {
+     height: 100vh; 
+     width: 100vw;
+     background-color: rgb(255, 255, 255);
+     margin-bottom: 10px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: #444;
+}
+
+h1 {
+    color: linen;
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .main-display {
     background-color: rgb(186, 186, 245);
-}
+} */
 .search-area {
-    background-color: rgb(155, 200, 218);
+    /* background-color: rgb(155, 200, 218); */
+    height: 100vh; 
 }
+
+.past-search {
+    background-color: rgb(188, 188, 190);
+    border-radius: 5px;
+}
+
+.clear-search {
+    background-color: rgb(129, 38, 38);
+    border-radius: 5px;
+}
+
+.current-weather-div {
+    border: black 2px solid;
+    border-radius: 5px;
+}
+
+.forecast-day-div {
+    border-radius: 5px;
+    color: linen;
+}
+

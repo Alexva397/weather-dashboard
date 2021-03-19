@@ -7,32 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <header class="container-fluid bg-primary p-2">
+    <header class="container-fluid p-2 header">
         <h1 class="row justify-content-center">Weather Dashboard</h1>
     </header>
     <div class="container-fluid main-display">
         <div class="row">
-            <div class="col-3 search-area">
+            <div class="col-3 m-2 search-area">
                 <h3>Search by City:</h3>
                 <form id="searchForm">
                     <div class="input-group mb-3">
                         <input type="text" name="city" class="form-control" placeholder="enter city here..." aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>                               
+                            <button class="btn btn-primary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>                               
                         </div>
                     </div>
                 </form>
-                <div id="searchHistory"></div>
+                <div id="searchHistory" class="text-center"></div>
             </div>
-            <div id="searchDisplayEl" class="col-9">
-                <div id="currentWeather"></div>
-                <div id="fiveDayForecast" class="row"></div>
+            <div class="col-8 m-2">
+                <div id="currentWeather" class="p-4 m-2 h-60"></div>
+                <div id="fiveDayForecast" class="row h-40 d-flex justify-content-center"></div>
             </div>
         </div>
     </div>
@@ -42,12 +44,5 @@
 </body>
 
 </html>
-
-<!-- 
-<div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="input city here.." aria-label="input city here.." aria-describedby="button-addon2">
-    <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i>
-    </button>
-  </div> -->
 
 
