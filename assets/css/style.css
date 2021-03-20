@@ -20,16 +20,13 @@ h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* .main-display {
-    background-color: rgb(186, 186, 245);
-} */
 .search-area {
     /* background-color: rgb(155, 200, 218); */
     height: 100vh; 
 }
 
 .past-search {
-    background-color: rgb(188, 188, 190);
+    background-color: rgb(208, 178, 243);
     border-radius: 5px;
 }
 
@@ -37,6 +34,11 @@ h2, h3, h4, h5 {
     background-color: rgb(129, 38, 38);
     border-radius: 5px;
 }
+/* 
+.night-current {
+    background-color: rgba(22, 22, 22, 0.836);
+    color: linen;
+} */
 
 .current-weather-div {
     border: black 2px solid;
