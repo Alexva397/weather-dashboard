@@ -77,8 +77,7 @@ $(document).ready(function () {
         const pastSearchButton = $("<button type='button' class='btn mb-1 col-10 past-search'>");
         localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
         pastSearchButton.text(city);
-
-            searchHitstoyEl.prepend(pastSearchButton);
+        searchHitstoyEl.prepend(pastSearchButton);
             // if (searchHistory.length === 1) {
             //     createClearButton();
             // }
@@ -88,8 +87,8 @@ $(document).ready(function () {
             //     localStorage.clear();
             // });
             // createClearButton();
-            generateCurrentWeather(city);
-            generateFiveDayForecast(city);
+        generateCurrentWeather(city);
+        generateFiveDayForecast(city);
         }
     });
 
@@ -138,6 +137,7 @@ $(document).ready(function () {
             });
     }
 
+    // function for 5 day forecast
     function generateFiveDayForecast(city) {
         const fiveDayRequestUrl = `${baseUrl}forecast?q=${city}&units=imperial&appid=${apiKey}`;
         // Request data from API
@@ -255,6 +255,7 @@ $(document).ready(function () {
     }
     pullSearchHistory();
 
+    // Create functionality on previous search button click
     $(".past-search").click(function(event) {
         event.preventDefault();
         // console.log(event.target);
